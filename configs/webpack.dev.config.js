@@ -12,26 +12,35 @@ module.exports = merge(webpackConfiguration, {
 
   /* Development Server Configuration */
   devServer: {
-    contentBase: environment.paths.output,
-    watchContentBase: true,
-    publicPath: "/",
+    static: {
+      directory: environment.paths.output,
+      watch: true,
+    },
+    devMiddleware: {
+      publicPath: "/",
+    },
     open: true,
     historyApiFallback: true,
     compress: true,
-    overlay: true,
+    client: {
+      overlay: true,
+    },
     hot: false,
-    watchOptions: {
-      poll: 300,
+    watchFiles: {
+      paths: ['src/**/*'],
+      options: {
+        usePolling: true,
+      },
     },
     ...environment.server,
   },
 
   /* File watcher options */
-  watchOptions: {
-    aggregateTimeout: 300,
-    poll: 300,
-    ignored: /node_modules/,
-  },
+  // watchOptions: {
+  //   aggregateTimeout: 300,
+  //   poll: 300,
+  //   ignored: /node_modules/,
+  // },
 
   /* Additional plugins configuration */
   plugins: [],
