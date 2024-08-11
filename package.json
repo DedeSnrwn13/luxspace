@@ -22,10 +22,11 @@
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.0",
+    "gifsicle": "^7.0.1",
     "html-webpack-plugin": "^5.6.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "mini-css-extract-plugin": "^2.9.0",
-    "postcss": "^8.4.40",
+    "postcss": "^8.4.41",
     "postcss-loader": "^8.1.1",
     "style-loader": "^4.0.0",
     "tailwindcss": "^3.4.9",
@@ -34,8 +35,7 @@
     "webpack": "^5.93.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4",
-    "webpack-merge": "^6.0.1",
-    "gifsicle": "^7.0.1"
+    "webpack-merge": "^6.0.1"
   },
   "dependencies": {
     "full": "^1.0.1"

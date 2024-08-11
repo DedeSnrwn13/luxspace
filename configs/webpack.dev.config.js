@@ -8,8 +8,6 @@ module.exports = merge(webpackConfiguration, {
 
   mode: "development",
 
-  watch: true,
-
   /* Manage source maps generation process */
   devtool: "eval-source-map",
 
