@@ -5,7 +5,10 @@ const webpackConfiguration = require("../webpack.config");
 const environment = require("./env");
 
 module.exports = merge(webpackConfiguration, {
+
   mode: "development",
+
+  watch: true,
 
   /* Manage source maps generation process */
   devtool: "eval-source-map",
@@ -36,11 +39,12 @@ module.exports = merge(webpackConfiguration, {
   },
 
   /* File watcher options */
-  // watchOptions: {
-  //   aggregateTimeout: 300,
-  //   poll: 300,
-  //   ignored: /node_modules/,
-  // },
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 300,
+    ignored: '**/node_modules',
+    followSymlinks: true,
+  },
 
   /* Additional plugins configuration */
   plugins: [],
