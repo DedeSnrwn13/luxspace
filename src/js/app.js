@@ -6,3 +6,4 @@ import "./anchor-link-smooth.js";
 import "./carousel.js";
 import "./accordion.js";
 import "./slider.js";
+import "./shopping-cart.js";

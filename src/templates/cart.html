@@ -91,6 +91,7 @@
               </li>
               <li class="ml-6">
                 <a
+                  id="header-cart"
                   href="cart.html"
                   class="flex items-center justify-center w-8 h-8 text-black cart cart-filled"
                 >
@@ -156,7 +157,7 @@
       <div class="container mx-auto pc-4">
         <div class="flex -mx-4 flex-wrap">
           <!-- START: Shipping Cart -->
-          <div class="w-full px-4 mb-4 md:w-8/12 md:mb-0">
+          <div class="w-full px-4 mb-4 md:w-8/12 md:mb-0" id="shopping-cart">
             <div
               class="flex flex-start mb-4 mt-8 pb-3 border-b border-gray-200 md:border-b-0"
             >
@@ -190,8 +191,18 @@
             </div>
             <!-- END: Table Title -->
 
+            <!-- START: Cart empty wrapper -->
+            <p id="cart-empty" class="hidden text-center py-8">
+              Ooops... Cart is empty
+              <a href="details.html" class="underline">Shop Now!</a>
+            </p>
+            <!-- END: Cart empty wrapper -->
+
             <!-- START: Table item 1 -->
-            <div class="flex flex-start flex-wrap items-center mb-4 -mx-4">
+            <div
+              class="flex flex-start flex-wrap items-center mb-4 -mx-4"
+              data-row="1"
+            >
               <div class="px-4 flex-none">
                 <div class="" style="width: 90px; height: 90px">
                   <img
@@ -224,6 +235,7 @@
               <div class="px-4 w-2/12">
                 <div class="text-center">
                   <button
+                    data-delete-item="1"
                     class="text-red-600 border-none focus:outline-none px-3 py-1"
                   >
                     X
@@ -234,7 +246,10 @@
             <!-- END: Table item 1 -->
 
             <!-- START: Table item 2 -->
-            <div class="flex flex-start flex-wrap items-center mb-4 -mx-4">
+            <div
+              class="flex flex-start flex-wrap items-center mb-4 -mx-4"
+              data-row="2"
+            >
               <div class="px-4 flex-none">
                 <div class="" style="width: 90px; height: 90px">
                   <img
@@ -267,6 +282,7 @@
               <div class="px-4 w-2/12">
                 <div class="text-center">
                   <button
+                    data-delete-item="2"
                     class="text-red-600 border-none focus:outline-none px-3 py-1"
                   >
                     X
@@ -277,7 +293,10 @@
             <!-- END: Table item 2 -->
 
             <!-- START: Table item 3 -->
-            <div class="flex flex-start flex-wrap items-center mb-4 -mx-4">
+            <div
+              class="flex flex-start flex-wrap items-center mb-4 -mx-4"
+              data-row="3"
+            >
               <div class="px-4 flex-none">
                 <div class="" style="width: 90px; height: 90px">
                   <img
@@ -310,6 +329,7 @@
               <div class="px-4 w-2/12">
                 <div class="text-center">
                   <button
+                    data-delete-item="3"
                     class="text-red-600 border-none focus:outline-none px-3 py-1"
                   >
                     X
