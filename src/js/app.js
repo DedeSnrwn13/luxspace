@@ -7,3 +7,4 @@ import "./carousel.js";
 import "./accordion.js";
 import "./slider.js";
 import "./shopping-cart.js";
+import "./shipping-detail.js";
